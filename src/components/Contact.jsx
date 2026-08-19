@@ -1,0 +1,4 @@
+import { useState } from 'react';
+import './Contact.css';
+function Contact() { const [sent, setSent] = useState(false); const handleSubmit = (event) => { event.preventDefault(); setSent(true); event.currentTarget.reset(); }; return <section id="contacto" className="section contact"><h2 className="section-title">Conectemos</h2><p className="section-copy">¿Tienes una duda o sugerencia para RYVEX? Escríbenos.</p><form onSubmit={handleSubmit} className="contact-form"><input required name="name" placeholder="Tu nombre" /><input required type="email" name="email" placeholder="Correo electrónico" /><textarea required name="message" rows="5" placeholder="Cuéntanos tu mensaje" /><button type="submit">Enviar mensaje</button>{sent && <p className="form-success" role="status">¡Mensaje enviado! Te responderemos pronto.</p>}</form></section>; }
+export default Contact;

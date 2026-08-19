@@ -1,0 +1,3 @@
+import './GameCard.css';
+function GameCard({ game, isFavorite, onToggleFavorite }) { return <article className="game-card"><div className={`game-art art-${game.id}`}><span>{game.art}</span><button className="favorite-button" onClick={() => onToggleFavorite(game.id)} aria-label={`Añadir ${game.title} a favoritos`}>{isFavorite ? '♥' : '♡'}</button></div><div className="game-info"><p className="game-category">{game.category} · {game.platform}</p><h3>{game.title}</h3><div className="game-bottom"><strong>{game.price}</strong><button onClick={() => onToggleFavorite(game.id)}>{isFavorite ? 'Guardado' : 'Favorito'}</button></div></div></article>; }
+export default GameCard;
