@@ -1,23 +1,14 @@
 import Header from './components/Header';
+import Hero from './components/Hero';
 import './App.css';
 
 function App() {
   return (
     <>
       <Header />
-      
-      <main style={{ 
-        padding: '40px', 
-        textAlign: 'center', 
-        fontFamily: 'sans-serif',
-        color: '#ffffff',
-        backgroundColor: '#0d001a',
-        minHeight: 'calc(100vh - 80px)' 
-      }}>
-      </main>
+      <Hero />
     </>
   );
 }
 
 export default App;
-

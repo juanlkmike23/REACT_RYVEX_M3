@@ -1,0 +1,105 @@
+/* AVANCE ZAMORA */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0d001a;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* 2. ESTILOS DEL HEADER (BARRA DE NAVEGACIÓN GAMER) */
+.gamer-header {
+  background: linear-gradient(135deg, #120024 0%, #1a0033 100%);
+  border-bottom: 2px solid #9d4edd;
+  box-shadow: 0 4px 20px rgba(157, 78, 221, 0.25);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-text {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(157, 78, 221, 0.6);
+}
+
+.logo-text .dot {
+  color: #00f5d4;
+  text-shadow: 0 0 10px #00f5d4;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-item {
+  color: #e0aaff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.nav-item:hover {
+  color: #ffffff;
+  background-color: rgba(157, 78, 221, 0.2);
+  box-shadow: 0 0 15px rgba(157, 78, 221, 0.5);
+  text-shadow: 0 0 8px #ffffff;
+}
+
+.gamer-hero {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-title {
+  color: #00f5d4;
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  text-shadow: 0 0 15px rgba(0, 245, 212, 0.4);
+}
+
+.hero-subtitle {
+  color: #e0aaff;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 35px auto;
+  line-height: 1.6;
+}
+
+.hero-btn {
+  background: linear-gradient(135deg, #9d4edd 0%, #7b2cbf 100%);
+  color: white;
+  border: none;
+  padding: 14px 35px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(157, 78, 221, 0.4);
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(157, 78, 221, 0.7);
+}
